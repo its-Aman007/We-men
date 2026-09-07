@@ -78,6 +78,7 @@ const PlaceOrder = () => {
           const data = await response.json();
 
           if(data.success){
+            toast.success('Order placed successfully');
             // getCartItems();
             navigate('/orders');
           } else {

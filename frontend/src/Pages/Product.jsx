@@ -69,7 +69,7 @@ const Product = () => {
             <p className='mt-5 text-gray-500 md:w-4/5'>{productData.description}</p>
             <div className='flex flex-col gap-4 my-8'>
 
-              <p>Select Size</p>
+              <p>Select pack size</p>
             <div className='flex gap-2'>
                 {productData.sizes.map((item, index) => (
   <button
@@ -92,9 +92,9 @@ const Product = () => {
           <hr className='mt-8 sm:w-3/4 border-gray-300' />
           <div className='text-sm text-gray-500 mt-5 flex flex-col gap-1'>
 
-                <p>100% Original Product</p>
-                <p>Cash On Delivery is Available on this Product</p>
-                <p>Easy Returns and Exchanges within 3 days</p>
+                <p>Prepared fresh with carefully sourced ingredients</p>
+                <p>Cash on delivery is available for this order</p>
+                <p>Freshness promise on every delivery</p>
 
           </div>
         </div>
@@ -109,10 +109,8 @@ const Product = () => {
         </div>
 
         <div className='flex flex-col gap-4 border px-6 py-6 text-sm text-gray-500'>
-          <p>Welcome to our online clothing store, where style meets comfort and quality. We offer a carefully curated collection of trendy, timeless, and affordable fashion for every occasion. From everyday wear to festive and party outfits, our designs are crafted to help you look confident and feel your best.
-
-            Enjoy a seamless shopping experience with secure payments, easy returns, and fast delivery right to your doorstep. With detailed product views, size guides, and responsive customer support, finding your perfect fit has never been easier.</p>
-          <p>Discover the latest trends and timeless classics in our collection. Whether you're dressing up for a special event or looking for casual everyday wear, we have something for everyone. Our commitment to quality ensures that every piece you purchase is made to last, so you can enjoy your favorite styles season after season.</p>
+          <p>Welcome to our online kitchen, where nostalgic sweets, comforting meals, and refreshing drinks are made for good days and shared tables. Every item is prepared with carefully chosen ingredients and packed so it arrives looking and tasting its best.</p>
+          <p>From celebration boxes to a quick lunch or an afternoon treat, our menu brings delicious food to your doorstep with simple ordering, secure payments, and dependable delivery.</p>
 
         </div>
 

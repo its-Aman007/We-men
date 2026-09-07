@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import { toast } from "react-toastify";
-// import { products } from "../assets/assets"; // --- IGNORE ---
+import { products as demoProducts } from "../assets/assets";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
@@ -14,7 +14,7 @@ export const ShopContextProvider = (props) => {
   const [search, setSearch] = useState("");
   const [showSearch, setShowSearch] = useState(false);
   const [cartItems, setCartItems] = useState({});
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState(demoProducts);
   const [token, setToken] = useState(localStorage.getItem("token") || "");
   const navigate = useNavigate();
 
@@ -39,6 +39,11 @@ const addToCart = async (itemId, size) => {
   cartData[itemId][size] += 1;
 
   setCartItems(cartData);
+
+  if (!token) {
+    toast.success("Item added to cart");
+    return;
+  }
 
   if (token) {
     try {
@@ -111,16 +116,7 @@ const addToCart = async (itemId, size) => {
   };
 
   const getProductData = async () => {
-    try {
-      const response = await axios.get(`${backendUrl}/api/product/list`);
-      if (response.data.success) {
-        setProducts(response.data.products);
-      } else {
-        toast.error(response.data.message || "Failed to fetch product list");
-      }
-    } catch (error) {
-      toast.error("Error fetching product list:", error.message);
-    }
+    setProducts(demoProducts);
   };
 
 const loadCartData = async () => {

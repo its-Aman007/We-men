@@ -21,9 +21,9 @@ const LatestCollection = () => {
 return (
     <div className='my-10'>
         <div className='text-center py-8 text-3xl'>
-            <Title text1={"Latest"} text2={"Collection"} />
+            <Title text1={"Fresh"} text2={"Favourites"} />
             <p className='w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600'>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi praesentium, repellat aliquam ipsam quod molestiae doloremque natus ratione repellendus porro quam iure architecto hic laboriosam atque provident, perferendis, ad modi.
+            Small-batch sweets, comforting meals, and refreshing drinks made for sharing.
             </p>
 
 

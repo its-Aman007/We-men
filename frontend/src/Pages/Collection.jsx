@@ -69,13 +69,13 @@ const Collection = () => {
           </p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
             <p className='flex gap-2'>
-              <input className='w-3' type='checkbox' value={'Men'} onChange={toggleCategory} checked={Category.includes('Men')} /> Men
+              <input className='w-3' type='checkbox' value={'Sweets'} onChange={toggleCategory} checked={Category.includes('Sweets')} /> Sweets
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type='checkbox' value={'Women'} onChange={toggleCategory} checked={Category.includes('Women')} /> Women
+              <input className='w-3' type='checkbox' value={'Food'} onChange={toggleCategory} checked={Category.includes('Food')} /> Food
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type='checkbox' value={'Kids'} onChange={toggleCategory} checked={Category.includes('Kids')} /> Kids
+              <input className='w-3' type='checkbox' value={'Drinks'} onChange={toggleCategory} checked={Category.includes('Drinks')} /> Drinks
             </p>
           </div>
         </div>
@@ -87,13 +87,13 @@ const Collection = () => {
           </p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
                 <p className='flex gap-2'>
-                  <input className='w-3' type='checkbox' value={'Topwear'} onChange={toggleSubcategory} checked={subcategory.includes('Topwear')} /> Top-wear
+                  <input className='w-3' type='checkbox' value={'Bakery'} onChange={toggleSubcategory} checked={subcategory.includes('Bakery')} /> Bakery
                 </p>
                 <p className='flex gap-2'>
-                  <input className='w-3' type='checkbox' value={'Bottomwear'} onChange={toggleSubcategory} checked={subcategory.includes('Bottomwear')} /> Bottom-wear
+                  <input className='w-3' type='checkbox' value={'Mains'} onChange={toggleSubcategory} checked={subcategory.includes('Mains')} /> Mains
                 </p>
                 <p className='flex gap-2'>
-                  <input className='w-3' type='checkbox' value={'Winterwear'} onChange={toggleSubcategory} checked={subcategory.includes('Winterwear')} /> Winter-wear
+                  <input className='w-3' type='checkbox' value={'Healthy Bites'} onChange={toggleSubcategory} checked={subcategory.includes('Healthy Bites')} /> Healthy bites
                 </p>
           </div>
         </div>
@@ -102,7 +102,7 @@ const Collection = () => {
       {/* Right Side */}
       <div className='flex-1'>
         <div className='flex justify-between text-base sm:text-2xl mb-4'>
-          <Title text1={'ALL'} text2={'COLLECTIONS'} />
+          <Title text1={'ALL'} text2={'GOODIES'} />
               <select className='border-2 border-gray-300 text-sm px-2' value={sortOption} onChange={(e) => setSortOption(e.target.value)}>
                 <option value="relavent">Sort by: Relavent</option>
                 <option value="low-high">Sort by: Low to High</option>
